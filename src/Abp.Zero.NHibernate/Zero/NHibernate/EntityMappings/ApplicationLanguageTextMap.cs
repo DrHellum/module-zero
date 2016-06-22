@@ -11,7 +11,7 @@ namespace Abp.Zero.NHibernate.EntityMappings
             Map(x => x.TenantId);
             Map(x => x.LanguageName);
             Map(x => x.Source);
-            Map(x => x.Key);
+            Map(x => x.Key).Column("[Key]");
             Map(x => x.Value);
             
             this.MapAudited();
